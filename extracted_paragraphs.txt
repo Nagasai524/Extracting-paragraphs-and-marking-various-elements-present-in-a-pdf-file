@@ -1,0 +1,326 @@
+Face recognition is one of the most promising field of
+computer vision. Recognize a face and verifying a person
+automatically from images, known as face recognition system
+[1]. Face recognition plays an important role in our regular
+life. In a passport checking, ATM, credit card, voter
+verification, smart door, criminal or terrorist investigation and
+many other purposes face recognition is widely used to
+authenticate a person automatically and accurately. For those
+reasons, face recognition is the most popular than any other
+Biometric techniques.
+
+Abstract— This paper represents an implementation of
+Principal Component Analysis (PCA) on masked and non-
+masked face recognition. Security is an essential term in our
+today’s life. In various Biometric technology, face recognition is
+widely used to secure any system because it is better than any
+other traditional techniques like PIN, password, fingerprint etc.
+and most reliable to identify or verify a person efficiently. In
+recent years, face recognition is a very challenging task because
+of different occlusion or masks like the existence of sunglasses,
+scarves, hats and different types of make-up or disguise
+ingredients. The accuracy rate of face recognition is influenced
+by these types of masks. Many algorithms have been developed
+recently for non-masked face recognition which are widely used
+and give better performance. Still in the field of masked face
+recognition, few contributions has been done. Therefore, in this
+work a statistical procedure has been selected which is applied
+in non-masked face recognition and also apply in the masked
+face recognition technique. PCA is more effective and successful
+statistical technique and widely used. For this reason in this
+work, PCA algorithm has been chosen. Finally, a comparative
+study also done here for a better understanding.
+
+In all automated personal identification system, face
+recognition has gained much attention as a unique Biometric
+recognition technique. For protecting the assets of many
+industries in the world are now trying to implement this
+authentication technique in their organizations. Throughout
+the world, many of the governments also interested to secure
+the public places such as railway stations, airports and bus
+stations etc. by using face recognition system. However for
+poor recognition rate, in real time recognizing remain
+
+Keywords—Face recognition, PCA algorithm, Eigen face,
+Eigen value, Masked face.
+
+Mad. Sabbir Ejaz
+
+ 
+
+Dept. of Computer Science and Engineering
+Bangladesh Army University of Engineering and Technology
+
+ 
+
+Md. Rabiul Islam
+
+Dept. of Computer Science and Engineering
+
+Rajshahi University of Engineering and Technology
+Datchah: Danaledaah
+
+unsuccessful. Recognition rate depends on quality of image.
+Recognition rate decreases for noisy and low quality image.
+That’s why pre-processing is needed for better recognition
+rate. Some pre-processing techniques like cropping, resizing,
+sharpening, de-noising, normalizing, enhancing are used in
+face recognition process [2]. Recently many algorithms have
+been developed for reliable face recognition. Different
+techniques depend on different methods and they have
+different recognition accuracy. All of these algorithms,
+Principal Component Analysis (PCA) gives a better accuracy
+rate in normal or non-masked face recognition [3]-[5].
+
+In present days masked face recognition is more important.
+Mainly terrorists and criminals covered their face with mask
+for disguise. Besides this, sunglass, hat, color festoon etc. also
+act like mask. Using different types of masks or occlusions the
+key features to identify a person is decreasing. Lower numbers
+of face features in the masked face cause difficulties than other
+normal face recognition technique [6]. Consequently the
+accuracy rate of recognition is decreasing. That’s why masked
+face is being one of the majors concerned factor in the field of
+face recognition. Figure 1 shows some of masked faces.
+
+Fig. 1. Human faces with different types of masks.
+
+For face recognition, at first we need to detect the face
+from image. After detecting face, we can recognize the person.
+
+It is easy for human to detect a face but harder for a system to
+detect face. For this reason at first we need to train the system
+for detect face portion from images. Here we use Viola-Jones
+algorithm to detect face from an image. Viola-Jones algorithm
+detect face using machine learning approach from any digital
+image [7]. After detecting face from input image, then we use
+PCA algorithm for feature extraction from image, which are
+used for training.
+
+Figure 2 demonstrate our proposed method to the problem
+of robust face recognition under mask and non-mask
+conditions. For face recognition at first detect the face portion
+from an image, find out the face features and finally train a
+system for face recognition. During the training phase, for
+detecting face portion we used Viola-Jones algorithm in our
+work and then PCA is used to efficiently represent the gallery
+images. In this way we obtain a PCA feature space which is
+called Eigen faces or ghost face. In the test case, a target face
+image (which can be masked or not) is given to be recognized.
+At first its PCA representation is computed. As a result,
+potential facial components are identified. Then, the Eigen
+faces are selected and used for recognition. The recognition is
+carried out by comparing the selected features from the target
+image against selected features from the corresponding
+template images. The nearest neighbor (NN) classifier
+distance is taken for the recognition.
+
+Fig. 2. Flow chart of face recognition process using PCA.
+
+The paper is organized as follows: Section 2 presents our
+face detection and face recognition methodology. Section 2
+describes about face recognition process. Section 3 signifies
+dataset. Section 4 shows experimental results and section 5
+draws conclusions.
+
+This work also presents a statistical difference of accuracy
+between masked face recognition and non-masked face
+recognition using the most successful algorithm Principal
+Component Analysis. All the result are shown in both
+graphically and tabulated form.
+
+From a digital image or video sources identify or verify a
+person automatically by comparing facial features is called
+face recognition. Using various algorithms, features are
+extracted and then perform comparison between training
+image and test image for recognize a face.
+
+Image acquisition is the first stage of face recognition
+system. After obtaining the images, different methods of
+processing can be applied on the image. If the image has not
+been acquired correctly then the desired tasks are difficult to
+achieve. In this work we use faces from a database named
+ORL Database and some of our own captured images. We mix
+up our own masked and non-masked images to the database
+to enlarge the dataset so that our work is more reliable and
+efficient.
+
+After acquiring the images, the first work is to segment
+out the face for further processing. We choose Viola-Jones
+face detection algorithm for detecting face region. Then
+implemented it in the MATLAB library to automatically
+segment the face region. Some of our face images quality are
+not much better as we needed. Up to expectation this face
+detector fails to detect face region in image. Faces which are
+heavily disguised or most of the important facial features are
+covered are subjects to fail detect face region. Every face
+image is normalized and apply image enhancement methods,
+so to achieve better results. This set of enhanced face images
+are therefore used to perform further experiments and
+evaluations.
+
+Principal Component Analysis (PCA) is an important
+statistical procedure and also defined as an orthogonal linear
+transformation. This algorithm emphasizes variation and
+brings out strong patterns in a dataset. It is used to minimize a
+big dataset to a small dataset still contains almost all the
+information as large dataset. PCA finds the data mean and
+principal components. It is popular as dimension reduction
+procedure. The technique is usually used for maximizing
+variance and seizing strong patterns of features in a dataset [8].
+It was introduced by Karl Pearson in 1901. PCA is an effective
+statistical method.
+
+For correlated data, Principal Component Analysis (PCA)
+works well. An image is also a highly correlated data. Hence
+extracting features from images, PCA performs better.
+Performing different operations on image matrix, it is
+transformed to a lower dimensional Eigen subspace. There
+after find out the covariance matrix from the lower dimension
+matrix. Relative variance between pixels in an image are
+represented by covariance matrix. Afterward Eigen vectors
+are calculated from this covariance matrix. Eigen vectors
+with the highest Eigen values are considered as the principal
+components.
+
+Basically a set of eigenvector is called Eigen face which is
+used for face recognition of human. Eigen face extract the
+main feature from image and major Eigen face is selected for
+face recognition. In face recognition, Eigen face is used for
+represent the face image efficiently by principal component
+analysis. Images can be reconstructed as like as original image
+from a few number of weights and pictures [10]. Eigen face in
+a face recognition system must be less or equal to the total size
+of dataset. In figure 3 shows some of Eigen faces.
+
+Eigenvalue and eigenvector comes from German word
+“Eigen” that means “Characteristic”. In a square matrix
+eigenvalue is a scalar that represent by 4, which is a Greek
+letter. Eigenvector is represented by small letter x and it is a
+non-zero vector [9]. Here is an equation which is satisfied
+by all eigenvector and eigenvalue. Here, S is a given square
+matrix.
+
+For face recognition we need to train a dataset and then
+apply Principal Component Analysis on train dataset step by
+step. At first, we have to convert train dataset into face vector.
+Each 2D (p by q) train image is converted into 1D (pq by 1)
+face vector. After converting all images, they are loaded which
+is called dataset. In this research work, total images K= 12
+
+Fig. 3. Some Eigen faces.
+
+A huge calculation need in a large matrix and to solve this
+problem, eigenvalue and eigenvector method is used.
+
+Steps of Principal Component Analysis algorithm aré
+mentioned below-
+
+Step 5: Calculate Eigen vectors and Eigen values
+
+Step 2: Calculate mean value of data
+
+Step 4: Calculate Covariance matrix
+
+Step 1: Input data
+
+Step 3: Subtract the mean value from each input data
+
+Step 6: Finding the greatest eigenvalue(s)
+
+Step 7: Calculate Weight
+
+(face of our dataset). Here K depends on the number of train
+images and J is a variable which loads all images.
+
+After load the dataset next procedure is to calculate
+verage or mean face. Here average face is X.
+
+Then, subtract the mean face from each image of the
+dataset which is called normalization. Here , is a variable
+which stores the result of normalization. Then new matrix D
+is generated,
+
+After normalizing, we get a normalized face vector. Then
+we calculate covariance matrix of normalized vector.
+
+Covariance matrix C is a large square matrix. For efficient
+and accurate calculation eigenvalue and eigenvector is
+calculated for reducing a huge face space vector. For
+recognition, we need to calculate weight which is compared
+with test image weight.
+
+Here, w = weight, 1 = eigenvector, I = face and X = average
+face.
+
+In this work ORL face database [13] is used, which
+contains a set of faces taken between April 1992 and April
+1994 at the Olivetti Research Laboratory in Cambridge, UK.
+This dataset contains 10 different images of 40 individuals.
+The files are in PGM format. Each image size is 92x112, 8-
+bit grey levels. For masked faces we created masked face
+images dataset using ORL face image and our own captured
+images. In this experiment, total 500 images used. 300 as a
+training image and 80-200 images used as test images on
+different test cases. Figure 4 shows some dataset images of
+our experiments. All the work done using MATLAB. Here
+use image processing toolbox of MATLAB 2017a version on
+windows platform.
+
+Proposed methodology is applied on our dataset images
+and found the resultant images. First step of face recognition
+is created a training dataset which contains pre-processed
+input images. After creating training set, average face is
+calculated for normalized training set. For normalize the
+dataset, subtracting an average face from each original face.
+Figure 5 shows the normalized faces of original face image.
+Then calculate the Eigen face which are shown in figure 6.
+Finally test some images for recognition. Here create some
+masked face images and also test them if it can be recognized
+
+the person properly. Both masked and non-masked face
+testing images shown in figure 7.
+
+Fig. 4. Some example images from training dataset.
+
+Fig. 6. Some Eigen faces
+
+Fig. 5. Some normalized faces
+
+Fig. 7. Testing (a) Masked face and (b) Non-Masked face
+
+A statistical comparison between masked face recognition
+and non-masked face recognition using PCA algorithm shown
+in table-I. This table shows the recognition accuracy of both
+masked and non-masked face images. A _ graphical
+representation also shown in figure 8 for a better data
+visualization.
+
+TABLE I. MASKED AND NON-MASKED FACE RECOGNITION ACCURACY
+
+Fig. 8. Graphical representation of both masked and non-masked face
+recognition accuracy
+
+This paper analyzed non-masked face recognition and
+masked face recognition accuracy using Principal
+Component Analysis (PCA) to recognize a person. It is
+proved that, a face without mask gives better recognition rate
+in PCA based face recognition system. But when a person is
+wearing mask, facial recognition gives poor recognition rate.
+It is found that extracting feature from a masked face is less
+than non-masked face. Because of missing features for
+wearing mask which decrease the recognition rate. Finally,
+we conclude that traditional statistical algorithm Principal
+Component Analysis (PCA) is better for normal face
+recognition but not for masked face recognition. So in the
+future, our concern to improve the accuracy of masked face
+recognition using other sophisticated machine learning
+methods.
+
+From the above table, accuracy of masked face image
+recognition is on average 72% where non-masked face is on
+average 95%. So PCA gives poor recognition rate for masked
+face images rather than non-masked faces.
+
+VII. REFERENCES
+
