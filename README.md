@@ -9,3 +9,5 @@ The program is also capable of marking various elements in the pdf file such as 
 2. After running the above script, the program prompts for PDF file. Provide the address of the PDF file which is to be processed.
 3. Now, the program prompts for the element to be extracted. If figures, Tables and Lists are selected only a processed PDF file in which the respective element is marked with orange colour will be displayed as output.
 4. If either paragraphs or text is selected then two files will be downloaded as output. One is Processed PDF file in which the respective element is marked and the second one is the text file that contains the text that is bounded by rectangles. All the paragraphs or headings will be extracted and stored in the second text file.  
+
+<embed src="processed@paragraphs.pdf" type="application/pdf">
