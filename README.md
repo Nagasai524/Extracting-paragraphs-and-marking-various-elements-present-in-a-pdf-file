@@ -13,6 +13,6 @@ The program is also capable of marking various elements in the pdf file such as 
 The processed pdf file in which paragraphs are marked will be as follows
 ![Screenshot (602)](https://user-images.githubusercontent.com/40739974/125208694-b2b18800-e2b1-11eb-9f1c-fd449fc13b59.png)
 
-The extracted text from the paragraphs will be as follows
+The extracted text from the paragraphs will be as follows <br/>
 ![Screenshot (603)](https://user-images.githubusercontent.com/40739974/125208711-ce1c9300-e2b1-11eb-8427-07448ddcce82.png)
 
