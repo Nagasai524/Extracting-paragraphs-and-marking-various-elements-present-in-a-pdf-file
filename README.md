@@ -10,9 +10,9 @@ The program is also capable of marking various elements in the pdf file such as 
 3. Now, the program prompts for the element to be extracted. If figures, Tables and Lists are selected only a processed PDF file in which the respective element is marked with orange colour will be displayed as output.
 4. If either paragraphs or text is selected then two files will be downloaded as output. One is Processed PDF file in which the respective element is marked and the second one is the text file that contains the text that is bounded by rectangles. All the paragraphs or headings will be extracted and stored in the second text file.  
 
-The processed pdf file in which paragraphs are marked will be as follows
+**The processed pdf file in which paragraphs are marked will be as follows
 ![Screenshot (602)](https://user-images.githubusercontent.com/40739974/125208694-b2b18800-e2b1-11eb-9f1c-fd449fc13b59.png)
 
-The extracted text from the paragraphs will be as follows <br/>
+**The extracted text from the paragraphs will be as follows <br/>
 ![Screenshot (603)](https://user-images.githubusercontent.com/40739974/125208711-ce1c9300-e2b1-11eb-8427-07448ddcce82.png)
 
